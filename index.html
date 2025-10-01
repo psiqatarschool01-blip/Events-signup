@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Sign-Up</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f5f5f5; padding: 20px; }
+    .container { max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+    h1 { text-align: center; color: #333; }
+    label { display: block; margin-top: 15px; }
+    input, select { width: 100%; padding: 8px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+    button { margin-top: 20px; padding: 10px; width: 100%; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    .note { font-size: 12px; color: #555; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Event Sign-Up</h1>
+    <p>Sign up here to join school events and volunteer opportunities! ⚠️</p>
+    <form id="signupForm">
+      <label for="email">School Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your school email" required>
+
+      <label for="grade">Select Grade / Year:</label>
+      <select id="grade" name="grade" required>
+        <option value="">Select your grade</option>
+        <option>Year 7</option>
+        <option>Year 8</option>
+        <option>Year 9</option>
+        <option>Year 10</option>
+        <option>Year 11</option>
+        <option>Year 12</option>
+        <option>Year 13</option>
+      </select>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="nationality">Nationality:</label>
+      <input type="text" id="nationality" name="nationality" placeholder="Enter your nationality" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+      <button type="submit">Submit</button>
+      <p class="note">Important: Make sure all info is filled carefully ⚠️</p>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("Oops! You’ve fallen for our trick 😎");
+      // Here you could add code to send data somewhere for your assignment
+    });
+  </script>
+</body>
+</html>
